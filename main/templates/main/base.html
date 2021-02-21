@@ -1,0 +1,14 @@
+<html>
+<head>
+<title>部落客djangoo</title>
+<meta charset="utf-8">
+</head>
+<body>
+<h2>關於部落客</h2>
+{% include 'main/menu.html'%}
+<h2>部落客--{% block heading %}{% endblock %}</h2>
+{% block content %}{% endblock %}
+
+<p>welcome to the Django</p>
+</body>
+</html>

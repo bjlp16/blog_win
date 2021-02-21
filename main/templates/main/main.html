@@ -1,0 +1,10 @@
+<!--繼承main/base.html文件-->
+{% extends 'main/base.html' %}
+
+<!--名字叫heading的block, 將main/base.html裡面的heading區塊換為:關於 -->
+{% block heading %}首頁{% endblock %}
+
+<!--名字叫content的block, 將main/base.html裡面的content區塊換為:<p>{{ like }}</p> -->
+{% block content %}
+<p>{{ like }}</p><!--render引入-->
+{% endblock %}
